@@ -1,5 +1,4 @@
-# start in-place a simple http server, take a optional parameter for the port number
-function pyhttp
+function pyhttp -d "Start SimpleHTTPServer, optional argument for port number"
   if test -n "$argv"
     set HTTPPORT $argv
   else

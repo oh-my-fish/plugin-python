@@ -1,5 +1,4 @@
-# clean current directory recursively from any .pyc and .pyo files
-function pyclean
+function pyclean -d "Recursively clean directory from .pyc and .pyo files"
   set -l path2CLEAN
 
   if set -q $argv
