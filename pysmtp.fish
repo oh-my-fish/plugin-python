@@ -1,5 +1,4 @@
-# start smtp debugging server, can pass an option port parameter. Default to 1025
-function pysmtp
+function pysmtp -d "Start SMTP debugging server, option port argument. Default is 1025"
   if test -n "$argv"
     set SMTPPORT $argv
   else
