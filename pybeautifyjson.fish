@@ -1,4 +1,7 @@
-# use : pybeautifyjson '{"foo": "lorem", "bar": "ipsum"}'
 function pybeautifyjson -d "Beautify a JSON string"
-  echo $argv | _python -mjson.tool
+  if [ (count $argv) -gt 0 ]
+    echo $argv | _python -mjson.tool
+  else
+    echo "Usage: pybeautifyjson '{\"foo\": \"lorem\", \"bar\": \"ipsum\"}'"
+  end
 end
