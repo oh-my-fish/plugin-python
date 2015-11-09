@@ -14,7 +14,7 @@
 This plug-in brings a number of handy functions:
 
 - `pybeautifyjson` - Beautify a JSON string
-- `pyclean` - Recursively clean directory from .pyc and .pyo files
+- `pyclean` - Recursively clean directory from .pyc and .pyo files and python3 __pycache__ folders
 - `pyhttp` - Start SimpleHTTPServer, optional argument for port number
 - `pysmtp` - Start SMTP debugging server, option port argument. Default is 1025
 
