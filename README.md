@@ -29,7 +29,7 @@ $ omf install python
 ## Usage
 
 ```fish
-$ pyclean  # recursively clean .pyc and .pyo
+$ pyclean  # recursively clean .pyc / .pyo and __pycache__ folders
 $ pybeautifyjson '{"foo": "lorem", "bar": "ipsum"}'    # beautify a JSON string
 $ pybeautifyjson (curl -s http://api.example.com/foo)  # beautify a JSON output
 $ curl -s http://api.example.com/foo | pybeautifyjson  # beautify a JSON output
