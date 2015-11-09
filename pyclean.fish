@@ -1,4 +1,4 @@
-function pyclean -d "Recursively clean directory from .pyc and .pyo files"
+function pyclean -d "Recursively clean directory from __pycache__ folders and .pyc / .pyo files"
   set -l path2CLEAN
 
   if set -q $argv
@@ -8,4 +8,6 @@ function pyclean -d "Recursively clean directory from .pyc and .pyo files"
   end
 
   find $path2CLEAN -name "*.py[co]" -type f -delete
+  find $path2CLEAN -name "__pycache__" -type d -delete
+
 end
