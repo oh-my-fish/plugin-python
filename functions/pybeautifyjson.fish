@@ -7,12 +7,12 @@ function pybeautifyjson -d "Beautify a JSON string"
       echo "  echo '{\"foo\": \"lorem\", \"bar\": \"ipsum\"}' | pybeautifyjson"
       return 0
     end
-    echo $argv | _python -mjson.tool
+    echo $argv | __python -mjson.tool
   else
     set -l input ""
     while read -z -p "echo ''" -l line
         set input $input $line
     end
-    echo $input | _python -mjson.tool
+    echo $input | __python -mjson.tool
   end
 end

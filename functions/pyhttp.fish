@@ -5,5 +5,5 @@ function pyhttp -d "Start SimpleHTTPServer, optional argument for port number"
     set HTTPPORT 1025
   end
 
-  _python -m SimpleHTTPServer $HTTPPORT;
+  __python -m SimpleHTTPServer $HTTPPORT;
 end

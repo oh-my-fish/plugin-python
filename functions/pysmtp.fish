@@ -6,5 +6,5 @@ function pysmtp -d "Start SMTP debugging server, option port argument. Default i
   end
 
   echo "smtp server started on port" $SMTPPORT;
-  _python -m smtpd -n -c DebuggingServer localhost:$SMTPPORT;
+  __python -m smtpd -n -c DebuggingServer localhost:$SMTPPORT;
 end
