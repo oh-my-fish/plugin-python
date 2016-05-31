@@ -1,9 +1,8 @@
-function pyhttp -d "Start SimpleHTTPServer, optional argument for port number"
-  if test -n "$argv"
-    set HTTPPORT $argv
-  else
-    set HTTPPORT 1025
+function pyhttp -a port -d "Start SimpleHTTPServer, optional argument for port number"
+  if test -z "$port"
+    set port 1025
   end
 
-  __python -m SimpleHTTPServer $HTTPPORT;
+  echo "About to serve on http://0.0.0.0:$port"
+  __python -m SimpleHTTPServer $port;
 end
